@@ -31,6 +31,9 @@
 							"type": "HttpReadSettings",
 							"maxConcurrentConnections": 8,
 							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
 						}
 					},
 					"sink": {

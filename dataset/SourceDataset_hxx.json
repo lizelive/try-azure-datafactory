@@ -11,9 +11,6 @@
 			"location": {
 				"type": "HttpServerLocation",
 				"relativeUrl": "fma_small.zip"
-			},
-			"compression": {
-				"type": "ZipDeflate"
 			}
 		}
 	}
