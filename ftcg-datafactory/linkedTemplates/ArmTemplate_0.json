@@ -93,9 +93,6 @@
 					"location": {
 						"type": "HttpServerLocation",
 						"relativeUrl": "fma_small.zip"
-					},
-					"compression": {
-						"type": "ZipDeflate"
 					}
 				}
 			},
@@ -138,6 +135,9 @@
 									"type": "HttpReadSettings",
 									"maxConcurrentConnections": 8,
 									"requestMethod": "GET"
+								},
+								"formatSettings": {
+									"type": "BinaryReadSettings"
 								}
 							},
 							"sink": {
