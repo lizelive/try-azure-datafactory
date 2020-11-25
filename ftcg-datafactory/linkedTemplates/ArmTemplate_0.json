@@ -71,6 +71,9 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileSystem": "fma"
+					},
+					"compression": {
+						"type": "ZipDeflate"
 					}
 				}
 			},
@@ -92,7 +95,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "fma_small.zip"
+						"relativeUrl": "fma_metadata.zip"
 					}
 				}
 			},
@@ -133,8 +136,8 @@
 								"type": "BinarySource",
 								"storeSettings": {
 									"type": "HttpReadSettings",
-									"maxConcurrentConnections": 8,
-									"requestMethod": "GET"
+									"requestMethod": "GET",
+									"requestTimeout": ""
 								},
 								"formatSettings": {
 									"type": "BinaryReadSettings"
