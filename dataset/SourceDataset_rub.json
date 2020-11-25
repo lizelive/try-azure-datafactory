@@ -1,0 +1,21 @@
+{
+	"name": "SourceDataset_rub",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "fma_metadata.zip",
+				"fileSystem": "fma"
+			},
+			"compression": {
+				"type": "ZipDeflate"
+			}
+		}
+	}
+}
