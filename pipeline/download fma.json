@@ -29,8 +29,8 @@
 						"type": "BinarySource",
 						"storeSettings": {
 							"type": "HttpReadSettings",
-							"maxConcurrentConnections": 8,
-							"requestMethod": "GET"
+							"requestMethod": "GET",
+							"requestTimeout": ""
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings"
