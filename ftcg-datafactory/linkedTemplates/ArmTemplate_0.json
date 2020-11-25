@@ -271,13 +271,14 @@
 								"type": "BinarySource",
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
-									"recursive": false,
+									"recursive": true,
 									"deleteFilesAfterCompletion": false
 								},
 								"formatSettings": {
 									"type": "BinaryReadSettings",
 									"compressionProperties": {
-										"type": "ZipDeflateReadSettings"
+										"type": "ZipDeflateReadSettings",
+										"preserveZipFileNameAsFolder": false
 									}
 								}
 							},
@@ -285,7 +286,7 @@
 								"type": "BinarySink",
 								"storeSettings": {
 									"type": "AzureBlobFSWriteSettings",
-									"copyBehavior": "FlattenHierarchy"
+									"copyBehavior": "PreserveHierarchy"
 								}
 							},
 							"enableStaging": false
