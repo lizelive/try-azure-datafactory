@@ -150,15 +150,14 @@
 									"type": "BinaryReadSettings",
 									"compressionProperties": {
 										"type": "ZipDeflateReadSettings",
-										"preserveZipFileNameAsFolder": false
+										"preserveZipFileNameAsFolder": true
 									}
 								}
 							},
 							"sink": {
 								"type": "BinarySink",
 								"storeSettings": {
-									"type": "AzureBlobFSWriteSettings",
-									"copyBehavior": "PreserveHierarchy"
+									"type": "AzureBlobFSWriteSettings"
 								}
 							},
 							"enableStaging": false
